@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    margin: var(--size-px--m);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.flow--layout-card {
+    max-width: 1024px;
+    margin: auto auto var(--size-px--m);
+}
