@@ -33,7 +33,7 @@
   "scripts": {
     "lint": "eslint --fix 'src/**/*.{ts,tsx}' --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write src/**/* eslint.config.mjs",
-    "build": "tsup",
+    "build": "tsup && cp src/flow-core.d.ts dist/flow-core.d.ts",
     "dev": "tsup --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
