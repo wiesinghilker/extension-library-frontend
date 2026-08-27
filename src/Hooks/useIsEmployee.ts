@@ -30,7 +30,7 @@ export const useIsEmployee = (apiBaseURL: string): boolean | undefined => {
     };
 
     void fetchEmployeeStatus();
-  }, []);
+  }, [apiBaseURL]);
 
   return isEmployee;
 };
