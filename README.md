@@ -12,13 +12,13 @@ pnpm add @wiesinghilker/extension-lib-frontend
 
 ```json
 {
-  "@mittwald/ext-bridge": "^0",
-  "@mittwald/flow-remote-react-components": "^0",
+  "@mittwald/ext-bridge": "^1",
+  "@mittwald/flow-remote-react-components": "^1",
   "@playwright/test": "^1",
   "openapi-fetch": "^0",
   "react": "^19",
   "react-dom": "^19",
-  "react-router": "^7"
+  "react-router": "^7 || ^8"
 }
 ```
 
