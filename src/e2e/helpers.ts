@@ -1,3 +1,6 @@
+// Node globals/modules are only used by the Playwright helpers; TS 6 no longer
+// includes @types/* automatically, so pull in the node types for this entry.
+/// <reference types="node" />
 import { expect, Locator, Page, Download } from "@playwright/test";
 import path from "path";
 import fs from "fs";
