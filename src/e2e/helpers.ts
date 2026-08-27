@@ -20,7 +20,11 @@ export async function login(page: Page) {
   await page.waitForURL(/\/app\/dashboard$/);
 }
 
-export async function navigateToApp(page: Page, projectName: string, appName: string) {
+export async function navigateToApp(
+  page: Page,
+  projectName: string,
+  appName: string,
+) {
   await page.getByRole("link", { name: "Projekte" }).click();
   await expect(page).toHaveURL(/\/app\/projects$/);
 
@@ -34,7 +38,11 @@ export async function navigateToApp(page: Page, projectName: string, appName: st
   await expect(page).toHaveURL(/\/app\/projects\/.*\/apps\/.*\/general$/);
 }
 
-export async function navigateToEmailAddress(page: Page, projectName: string, emailAddress: string) {
+export async function navigateToEmailAddress(
+  page: Page,
+  projectName: string,
+  emailAddress: string,
+) {
   await page.getByRole("link", { name: "Projekte" }).click();
   await expect(page).toHaveURL(/\/app\/projects$/);
 
@@ -66,7 +74,9 @@ export async function navigateToExtension(
 
   await page.getByRole("link", { name: extensionName }).click();
   if (headingName) {
-    await expect(page.getByRole("heading", { name: headingName })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: headingName }),
+    ).toBeVisible();
   }
 }
 
@@ -163,7 +173,10 @@ export async function expectDownload(
   expect(download.suggestedFilename()).toBe(expectedFilename);
 
   if (minSizeBytes !== undefined) {
-    const downloadPath = path.join("test-results", download.suggestedFilename());
+    const downloadPath = path.join(
+      "test-results",
+      download.suggestedFilename(),
+    );
     await download.saveAs(downloadPath);
     const stats = fs.statSync(downloadPath);
     expect(stats.size).toBeGreaterThan(minSizeBytes);

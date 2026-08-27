@@ -1,4 +1,8 @@
-import { Flex, LoadingSpinner, Text } from "@mittwald/flow-remote-react-components";
+import {
+  Flex,
+  LoadingSpinner,
+  Text,
+} from "@mittwald/flow-remote-react-components";
 
 export const CustomLoadingSpinner = (props: { text: string }) => {
   return (
