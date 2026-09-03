@@ -19,7 +19,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./dist/index.css": "./dist/index.css",
     "./e2e": {
       "types": "./dist/e2e.d.ts",
       "import": "./dist/e2e.js",
