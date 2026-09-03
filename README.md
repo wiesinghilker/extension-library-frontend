@@ -273,7 +273,6 @@ src/
   sessionTokenMiddleware.ts           # openapi-fetch Session-Token
   requestIdMiddleware.ts              # openapi-fetch Request-ID
   index.ts                            # Public API
-  index.css                           # Styles
 ```
 
 ### Entrypoints

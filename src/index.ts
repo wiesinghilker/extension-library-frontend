@@ -1,5 +1,3 @@
-import "./index.css";
-
 export { AuthenticationError } from "./Errors/AuthenticationError.js";
 export { CustomLoadingSpinner } from "./Components/CustomLoadingSpinner.js";
 export { DefaultErrorComponent } from "./Components/DefaultErrorComponent.js";
