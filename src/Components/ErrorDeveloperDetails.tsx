@@ -16,7 +16,7 @@ export const ErrorDeveloperDetails = () => {
   }
 
   return (
-    <Accordion variant="outline">
+    <Accordion>
       <Heading>Fehlerdetails für den Support</Heading>
       <Content>
         <Section>
